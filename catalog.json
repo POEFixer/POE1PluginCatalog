@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "generated": "2026-11-08T08:56:15Z",
+  "source_commit": "79c5c6bfa44efa5b9d1ce0fa8b244b32ff51c836",
+  "plugins": [
+    {
+      "id": "example",
+      "folder": "ExamplePlugin",
+      "name": "SDK Example",
+      "version": "2.0.0",
+      "author": "POE1Fixer",
+      "description": "A guided tour of the plugin SDK: 23 lessons, each with live data, the limits the app enforces and a code snippet to copy. Reads game memory only on its Memory page; sends input only when you arm its safe demo (one mouse move, no click, no key). Uses no network.",
+      "repo": "POEFixer/POE1ExamplePlugin",
+      "tag": "v2.0.0",
+      "url": "https://github.com/POEFixer/POE1ExamplePlugin/releases/download/v2.0.0/ExamplePlugin.zip",
+      "sha256": "e0e013b55115348d5e64091388768e4a2a870213842f4a0637f8ffb5f653215d",
+      "size": 477953,
+      "sdk": 1,
+      "min_app_version": 38,
+      "permissions": [
+        "memory",
+        "input"
+      ],
+      "overlay": true,
+      "panel": true,
+      "changes": [
+        "First release in the plugin catalog: a guided tour of the plugin SDK in 23 lessons."
+      ],
+      "i18n": {
+        "ru": {
+          "description": "Путеводитель по SDK плагинов: 23 урока с живыми данными, ограничениями программы и кодом для копирования. Память игры читает только на странице Memory; ввод отправляет, только если включить безопасную демонстрацию (одно движение мыши, без кликов и клавиш). Сеть не использует.",
+          "changes": [
+            "Первый выпуск в каталоге плагинов: путеводитель по SDK плагинов из 23 уроков."
+          ]
+        }
+      }
+    }
+  ]
+}
