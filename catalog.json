@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated": "2026-11-13T19:22:07Z",
-  "source_commit": "9dc036055b51f4ab079be8ada69456f276f718b4",
+  "generated": "2026-11-13T20:04:12Z",
+  "source_commit": "f290a19591548b75704b638bb93f75485b248bf6",
   "plugins": [
     {
       "id": "example",
@@ -44,14 +44,14 @@
       "id": "passive-tree-planner",
       "folder": "PassiveTreePlanner",
       "name": "Passive Tree Planner",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": "POE1Fixer",
       "description": "Shows a Path of Building build on the game's passive tree: what to take next (numbered, in priority order) and what to refund. Reads game memory, read-only, while you are in game (the passive tree window and your character's passives, class and level). Uses the network only when you import a pobb.in / pastebin / poe.ninja link or update the tree data from GitHub.",
       "repo": "POEFixer/POE1PassiveTreePlanner",
-      "tag": "v1.0.1",
-      "url": "https://github.com/POEFixer/POE1PassiveTreePlanner/releases/download/v1.0.1/PassiveTreePlanner.zip",
-      "sha256": "611900b2cefd8edc3554fc64f6b82db29590b4ca4c29b5d0a341b760ea12a3c1",
-      "size": 708166,
+      "tag": "v1.0.2",
+      "url": "https://github.com/POEFixer/POE1PassiveTreePlanner/releases/download/v1.0.2/PassiveTreePlanner.zip",
+      "sha256": "6c0fcef458130b0ae5a03b86c6ebf3adbb7cc3f877e7d6f2d99b80274dd9b742",
+      "size": 708046,
       "sdk": 1,
       "min_app_version": 38,
       "permissions": [
@@ -60,6 +60,7 @@
       "overlay": true,
       "panel": true,
       "changes": [
+        "Updated for Path of Exile 3.30 (Augury): the passive tree and the character's allocated passives, class and level are read from the new game client again.",
         "Paste messages follow POE1Fixer's new paste limit: newer versions pass up to 256 KB per paste (older ones 16 KB); a cut code still says so and suggests a pobb.in link.",
         "First release (1.0.0): paste a Path of Building code or a pobb.in / pastebin / poe.ninja link; on the open passive tree, green rings and numbers show what to take next, red rings what to refund."
       ],
@@ -67,6 +68,7 @@
         "ru": {
           "description": "Показывает билд из Path of Building на дереве пассивок в игре: что брать дальше (по порядку, с номерами) и что вернуть. Читает память игры, только чтение, пока вы в игре. Сеть — только при импорте ссылки pobb.in / pastebin / poe.ninja или обновлении данных дерева с GitHub.",
           "changes": [
+            "Обновлено для Path of Exile 3.30 (Augury): дерево пассивок, выбранные пассивки, класс и уровень персонажа снова читаются из нового клиента игры.",
             "Сообщения о вставке учитывают новый лимит POE1Fixer: новые версии передают до 256 КБ за вставку (старые — 16 КБ).",
             "Первый выпуск (1.0.0): билд из Path of Building на дереве пассивок — что брать дальше (с номерами) и что вернуть."
           ]
