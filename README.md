@@ -34,3 +34,21 @@ Changes:
 - Lesson 24 "Build a radar": the area's walls, entities and exits on the game's large map, on the minimap or in a panel of its own, from the new radar data for plugins ("radar" permission, POE1Fixer 39).
 - Map UI lesson fixed: the large map's position is its centre; it was drawn as a rectangle.
 - Guide: new chapter 11 "Building a radar".
+
+### Passive Tree Planner 1.0.0
+
+Shows a Path of Building build on the game's passive tree: what to take next (numbered, in priority order) and what to refund. Reads game memory, read-only, while you are in game (the passive tree window and your character's passives, class and level). Uses the network only when you import a pobb.in / pastebin / poe.ninja link or update the tree data from GitHub.
+
+- Id `passive-tree-planner`, installs into `Plugins\PassiveTreePlanner`
+- Author: POE1Fixer
+- Source and release: [POEFixer/POE1PassiveTreePlanner](https://github.com/POEFixer/POE1PassiveTreePlanner) ([v1.0.0](https://github.com/POEFixer/POE1PassiveTreePlanner/releases/tag/v1.0.0))
+- Permissions: memory; overlay: yes; panel: yes
+- Plugin SDK 1; needs POE1Fixer v38 or newer
+- Package: [PassiveTreePlanner.zip](https://github.com/POEFixer/POE1PassiveTreePlanner/releases/download/v1.0.0/PassiveTreePlanner.zip), 708157 bytes,
+  SHA-256 `d0fdd5e1fdc30cd82f759538d74665cf839eddc22e06e62d3e6862c2f5f52075`
+
+Changes:
+
+- First release: paste a Path of Building code or a pobb.in / pastebin / poe.ninja link; on the open passive tree, green rings and numbers show what to take next, red rings what to refund.
+- Follows the build's tree for your level; objectives the build author took in an earlier tree come first; masteries after a notable of their cluster.
+- Tree data: the official 3.30 export, updatable from GitHub in the plugin's Status tab.

@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated": "2026-11-12T17:54:22Z",
-  "source_commit": "dca9006b7463f5adbc298dd979b56e538c81c480",
+  "generated": "2026-11-13T19:13:49Z",
+  "source_commit": "40d5286bfabffcadb48713d0086fcf799ee9bfc9",
   "plugins": [
     {
       "id": "example",
@@ -36,6 +36,41 @@
             "Урок 24 «Build a radar»: стены локации, сущности и выходы на большой карте, миникарте или в своей панели — по новым данным радара для плагинов (разрешение «radar», POE1Fixer 39).",
             "Исправлен урок Map UI: позиция большой карты — её центр, а не прямоугольник.",
             "Руководство: новая глава 11 «Свой радар»."
+          ]
+        }
+      }
+    },
+    {
+      "id": "passive-tree-planner",
+      "folder": "PassiveTreePlanner",
+      "name": "Passive Tree Planner",
+      "version": "1.0.0",
+      "author": "POE1Fixer",
+      "description": "Shows a Path of Building build on the game's passive tree: what to take next (numbered, in priority order) and what to refund. Reads game memory, read-only, while you are in game (the passive tree window and your character's passives, class and level). Uses the network only when you import a pobb.in / pastebin / poe.ninja link or update the tree data from GitHub.",
+      "repo": "POEFixer/POE1PassiveTreePlanner",
+      "tag": "v1.0.0",
+      "url": "https://github.com/POEFixer/POE1PassiveTreePlanner/releases/download/v1.0.0/PassiveTreePlanner.zip",
+      "sha256": "d0fdd5e1fdc30cd82f759538d74665cf839eddc22e06e62d3e6862c2f5f52075",
+      "size": 708157,
+      "sdk": 1,
+      "min_app_version": 38,
+      "permissions": [
+        "memory"
+      ],
+      "overlay": true,
+      "panel": true,
+      "changes": [
+        "First release: paste a Path of Building code or a pobb.in / pastebin / poe.ninja link; on the open passive tree, green rings and numbers show what to take next, red rings what to refund.",
+        "Follows the build's tree for your level; objectives the build author took in an earlier tree come first; masteries after a notable of their cluster.",
+        "Tree data: the official 3.30 export, updatable from GitHub in the plugin's Status tab."
+      ],
+      "i18n": {
+        "ru": {
+          "description": "Показывает билд из Path of Building на дереве пассивок в игре: что брать дальше (по порядку, с номерами) и что вернуть. Читает память игры, только чтение, пока вы в игре. Сеть — только при импорте ссылки pobb.in / pastebin / poe.ninja или обновлении данных дерева с GitHub.",
+          "changes": [
+            "Первый выпуск: вставьте код Path of Building или ссылку pobb.in / pastebin / poe.ninja; на открытом дереве зелёные кольца с номерами — что брать дальше, красные — что вернуть.",
+            "Дерево билда выбирается по уровню персонажа; цели из более ранних деревьев автора идут первыми; мастерства — после notable своей группы.",
+            "Данные дерева: официальный экспорт 3.30, обновляются с GitHub на вкладке «Состояние»."
           ]
         }
       }
