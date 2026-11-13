@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated": "2026-11-13T19:13:49Z",
-  "source_commit": "40d5286bfabffcadb48713d0086fcf799ee9bfc9",
+  "generated": "2026-11-13T19:22:07Z",
+  "source_commit": "9dc036055b51f4ab079be8ada69456f276f718b4",
   "plugins": [
     {
       "id": "example",
@@ -44,14 +44,14 @@
       "id": "passive-tree-planner",
       "folder": "PassiveTreePlanner",
       "name": "Passive Tree Planner",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "POE1Fixer",
       "description": "Shows a Path of Building build on the game's passive tree: what to take next (numbered, in priority order) and what to refund. Reads game memory, read-only, while you are in game (the passive tree window and your character's passives, class and level). Uses the network only when you import a pobb.in / pastebin / poe.ninja link or update the tree data from GitHub.",
       "repo": "POEFixer/POE1PassiveTreePlanner",
-      "tag": "v1.0.0",
-      "url": "https://github.com/POEFixer/POE1PassiveTreePlanner/releases/download/v1.0.0/PassiveTreePlanner.zip",
-      "sha256": "d0fdd5e1fdc30cd82f759538d74665cf839eddc22e06e62d3e6862c2f5f52075",
-      "size": 708157,
+      "tag": "v1.0.1",
+      "url": "https://github.com/POEFixer/POE1PassiveTreePlanner/releases/download/v1.0.1/PassiveTreePlanner.zip",
+      "sha256": "611900b2cefd8edc3554fc64f6b82db29590b4ca4c29b5d0a341b760ea12a3c1",
+      "size": 708166,
       "sdk": 1,
       "min_app_version": 38,
       "permissions": [
@@ -60,17 +60,15 @@
       "overlay": true,
       "panel": true,
       "changes": [
-        "First release: paste a Path of Building code or a pobb.in / pastebin / poe.ninja link; on the open passive tree, green rings and numbers show what to take next, red rings what to refund.",
-        "Follows the build's tree for your level; objectives the build author took in an earlier tree come first; masteries after a notable of their cluster.",
-        "Tree data: the official 3.30 export, updatable from GitHub in the plugin's Status tab."
+        "Paste messages follow POE1Fixer's new paste limit: newer versions pass up to 256 KB per paste (older ones 16 KB); a cut code still says so and suggests a pobb.in link.",
+        "First release (1.0.0): paste a Path of Building code or a pobb.in / pastebin / poe.ninja link; on the open passive tree, green rings and numbers show what to take next, red rings what to refund."
       ],
       "i18n": {
         "ru": {
           "description": "Показывает билд из Path of Building на дереве пассивок в игре: что брать дальше (по порядку, с номерами) и что вернуть. Читает память игры, только чтение, пока вы в игре. Сеть — только при импорте ссылки pobb.in / pastebin / poe.ninja или обновлении данных дерева с GitHub.",
           "changes": [
-            "Первый выпуск: вставьте код Path of Building или ссылку pobb.in / pastebin / poe.ninja; на открытом дереве зелёные кольца с номерами — что брать дальше, красные — что вернуть.",
-            "Дерево билда выбирается по уровню персонажа; цели из более ранних деревьев автора идут первыми; мастерства — после notable своей группы.",
-            "Данные дерева: официальный экспорт 3.30, обновляются с GitHub на вкладке «Состояние»."
+            "Сообщения о вставке учитывают новый лимит POE1Fixer: новые версии передают до 256 КБ за вставку (старые — 16 КБ).",
+            "Первый выпуск (1.0.0): билд из Path of Building на дереве пассивок — что брать дальше (с номерами) и что вернуть."
           ]
         }
       }

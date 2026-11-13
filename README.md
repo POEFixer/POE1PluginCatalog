@@ -35,20 +35,19 @@ Changes:
 - Map UI lesson fixed: the large map's position is its centre; it was drawn as a rectangle.
 - Guide: new chapter 11 "Building a radar".
 
-### Passive Tree Planner 1.0.0
+### Passive Tree Planner 1.0.1
 
 Shows a Path of Building build on the game's passive tree: what to take next (numbered, in priority order) and what to refund. Reads game memory, read-only, while you are in game (the passive tree window and your character's passives, class and level). Uses the network only when you import a pobb.in / pastebin / poe.ninja link or update the tree data from GitHub.
 
 - Id `passive-tree-planner`, installs into `Plugins\PassiveTreePlanner`
 - Author: POE1Fixer
-- Source and release: [POEFixer/POE1PassiveTreePlanner](https://github.com/POEFixer/POE1PassiveTreePlanner) ([v1.0.0](https://github.com/POEFixer/POE1PassiveTreePlanner/releases/tag/v1.0.0))
+- Source and release: [POEFixer/POE1PassiveTreePlanner](https://github.com/POEFixer/POE1PassiveTreePlanner) ([v1.0.1](https://github.com/POEFixer/POE1PassiveTreePlanner/releases/tag/v1.0.1))
 - Permissions: memory; overlay: yes; panel: yes
 - Plugin SDK 1; needs POE1Fixer v38 or newer
-- Package: [PassiveTreePlanner.zip](https://github.com/POEFixer/POE1PassiveTreePlanner/releases/download/v1.0.0/PassiveTreePlanner.zip), 708157 bytes,
-  SHA-256 `d0fdd5e1fdc30cd82f759538d74665cf839eddc22e06e62d3e6862c2f5f52075`
+- Package: [PassiveTreePlanner.zip](https://github.com/POEFixer/POE1PassiveTreePlanner/releases/download/v1.0.1/PassiveTreePlanner.zip), 708166 bytes,
+  SHA-256 `611900b2cefd8edc3554fc64f6b82db29590b4ca4c29b5d0a341b760ea12a3c1`
 
 Changes:
 
-- First release: paste a Path of Building code or a pobb.in / pastebin / poe.ninja link; on the open passive tree, green rings and numbers show what to take next, red rings what to refund.
-- Follows the build's tree for your level; objectives the build author took in an earlier tree come first; masteries after a notable of their cluster.
-- Tree data: the official 3.30 export, updatable from GitHub in the plugin's Status tab.
+- Paste messages follow POE1Fixer's new paste limit: newer versions pass up to 256 KB per paste (older ones 16 KB); a cut code still says so and suggests a pobb.in link.
+- First release (1.0.0): paste a Path of Building code or a pobb.in / pastebin / poe.ninja link; on the open passive tree, green rings and numbers show what to take next, red rings what to refund.
