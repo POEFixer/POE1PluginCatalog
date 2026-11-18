@@ -35,20 +35,21 @@ Changes:
 - Map UI lesson fixed: the large map's position is its centre; it was drawn as a rectangle.
 - Guide: new chapter 11 "Building a radar".
 
-### Passive Tree Planner 1.0.2
+### Passive Tree Planner 1.0.3
 
 Shows a Path of Building build on the game's passive tree: what to take next (numbered, in priority order) and what to refund. Reads game memory, read-only, while you are in game (the passive tree window and your character's passives, class and level). Uses the network only when you import a pobb.in / pastebin / poe.ninja link or update the tree data from GitHub.
 
 - Id `passive-tree-planner`, installs into `Plugins\PassiveTreePlanner`
 - Author: POE1Fixer
-- Source and release: [POEFixer/POE1PassiveTreePlanner](https://github.com/POEFixer/POE1PassiveTreePlanner) ([v1.0.2](https://github.com/POEFixer/POE1PassiveTreePlanner/releases/tag/v1.0.2))
+- Source and release: [POEFixer/POE1PassiveTreePlanner](https://github.com/POEFixer/POE1PassiveTreePlanner) ([v1.0.3](https://github.com/POEFixer/POE1PassiveTreePlanner/releases/tag/v1.0.3))
 - Permissions: memory; overlay: yes; panel: yes
 - Plugin SDK 1; needs POE1Fixer v38 or newer
-- Package: [PassiveTreePlanner.zip](https://github.com/POEFixer/POE1PassiveTreePlanner/releases/download/v1.0.2/PassiveTreePlanner.zip), 708046 bytes,
-  SHA-256 `6c0fcef458130b0ae5a03b86c6ebf3adbb7cc3f877e7d6f2d99b80274dd9b742`
+- Package: [PassiveTreePlanner.zip](https://github.com/POEFixer/POE1PassiveTreePlanner/releases/download/v1.0.3/PassiveTreePlanner.zip), 708167 bytes,
+  SHA-256 `f589afa823cd886f84ae0d7e09d89cb60aeea5a7286f57b89ed4ff50c34ed31c`
 
 Changes:
 
+- Updated for the 2026-11-18 Path of Exile patch: the passive tree window is found and read on the new game client again.
 - Updated for Path of Exile 3.30 (Augury): the passive tree and the character's allocated passives, class and level are read from the new game client again.
 - Paste messages follow POE1Fixer's new paste limit: newer versions pass up to 256 KB per paste (older ones 16 KB); a cut code still says so and suggests a pobb.in link.
 - First release (1.0.0): paste a Path of Building code or a pobb.in / pastebin / poe.ninja link; on the open passive tree, green rings and numbers show what to take next, red rings what to refund.
