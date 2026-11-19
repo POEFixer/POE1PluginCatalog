@@ -1,20 +1,20 @@
 {
   "schema": 1,
-  "generated": "2026-11-19T07:07:12Z",
-  "source_commit": "50653141e30ec08dc2569de74ee7e5b4b3b52a7a",
+  "generated": "2026-11-19T07:18:20Z",
+  "source_commit": "6ea5d39b06f1eb088018f5977d7d45b940b0a0f5",
   "plugins": [
     {
       "id": "example",
       "folder": "ExamplePlugin",
       "name": "SDK Example",
-      "version": "2.1.0",
+      "version": "2.2.0",
       "author": "POE1Fixer",
       "description": "A guided tour of the plugin SDK: 24 lessons, each with live data, the limits the app enforces and a code snippet to copy, the last one a radar of its own on the game's maps. Reads game memory only on its Memory page; sends input only when you arm its safe demo (one mouse move, no click, no key). Uses no network.",
       "repo": "POEFixer/POE1ExamplePlugin",
-      "tag": "v2.1.0",
-      "url": "https://github.com/POEFixer/POE1ExamplePlugin/releases/download/v2.1.0/ExamplePlugin.zip",
-      "sha256": "0002af55c08076fb0ebe98b4cadad7d24a8b54e99a500fba580a440d89712c73",
-      "size": 510651,
+      "tag": "v2.2.0",
+      "url": "https://github.com/POEFixer/POE1ExamplePlugin/releases/download/v2.2.0/ExamplePlugin.zip",
+      "sha256": "66f5d22a7f3add05b2a9b918a46860b5ae5da3feec2f8ac5d3a7c5ab8d6c6800",
+      "size": 512097,
       "sdk": 1,
       "min_app_version": 39,
       "permissions": [
@@ -25,6 +25,7 @@
       "overlay": true,
       "panel": true,
       "changes": [
+        "Wide windows: the Map UI lesson places things inside the game's UI area (smaller than the client when the window is wider than 2.4:1 or very tall). New in the SDK: p1_ui_area, p1::Radar::UiArea, the _in / _at map transforms (POE1Fixer 50).",
         "Lesson 24 \"Build a radar\": the area's walls, entities and exits on the game's large map, on the minimap or in a panel of its own, from the new radar data for plugins (\"radar\" permission, POE1Fixer 39).",
         "Map UI lesson fixed: the large map's position is its centre; it was drawn as a rectangle.",
         "Guide: new chapter 11 \"Building a radar\"."
@@ -33,6 +34,7 @@
         "ru": {
           "description": "Путеводитель по SDK плагинов: 24 урока с живыми данными, ограничениями программы и кодом для копирования, последний — свой радар на картах игры. Память игры читает только на странице Memory; ввод — только в безопасной демонстрации (одно движение мыши). Сеть не использует.",
           "changes": [
+            "Широкие окна: урок Map UI размещает всё внутри области интерфейса игры (шире 2.4:1 или очень высокое окно). Новое в SDK: p1_ui_area, p1::Radar::UiArea, преобразования _in / _at (POE1Fixer 50).",
             "Урок 24 «Build a radar»: стены локации, сущности и выходы на большой карте, миникарте или в своей панели — по новым данным радара для плагинов (разрешение «radar», POE1Fixer 39).",
             "Исправлен урок Map UI: позиция большой карты — её центр, а не прямоугольник.",
             "Руководство: новая глава 11 «Свой радар»."
